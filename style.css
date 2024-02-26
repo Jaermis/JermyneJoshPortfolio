@@ -1,3 +1,16 @@
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #1d7ba8;
+}
 *{
     margin: 0;
     padding: 0;
@@ -194,6 +207,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    background-image: url(images/secondpagebg.png);
 }
 .row{
     display: flex;
@@ -268,6 +282,20 @@ nav ul li a:hover::after{
 }
 .tab-contents{
     display: none;
+    max-height: 180px;
+    overflow-y: auto;
+}
+.tab-contents::-webkit-scrollbar {
+    width: 10px;
+}
+.tab-contents::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+
+}
+.tab-contents::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #1d7ba8;
 }
 .tab-contents.active-tab{
     display: block;
