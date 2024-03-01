@@ -9,7 +9,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #1d7ba8;
+    background-color: #A9AFB4;
 }
 *{
     margin: 0;
@@ -18,8 +18,8 @@ html::-webkit-scrollbar-thumb {
     box-sizing: border-box;
 }
 body{
-    background: #fff;
-    color: #1d7ba8;
+    background: #0D1117;
+    color: #A9AFB4;
 }
 #header{
     width: 100%;
@@ -45,7 +45,7 @@ nav ul li{
     position: relative;
 }
 nav ul li a{
-    color: #fff;
+    color: #A9AFB4;
     text-decoration: none;
     font-size: 18px;
 }
@@ -62,10 +62,13 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav ul li a:hover{
+    color:#fff;;
+}
 .header-text{
     margin-top: 10%;
     font-size: 30px;
-    color: #fff;
+    color: #A9AFB4;
 }
 .header-text h1{
     font-size: 60px;
@@ -76,7 +79,7 @@ nav ul li a:hover::after{
 }
 .wrapper{
     box-sizing: content-box;
-    background-color: #79c9ee;
+    background-color: #07090D;
     height: 40px;
     width: 400px;
     overflow: hidden;
@@ -206,8 +209,8 @@ nav ul li a:hover::after{
 /*------------------------------about-------------------------------------*/
 #about{
     padding: 80px 0;
-    color: #ababab;
-    background-image: url(images/secondpagebg.png);
+    color: #07090D;
+    /*background-image: url(images/secondpagebg.png);*/
 }
 .row{
     display: flex;
@@ -217,6 +220,10 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 35%;
     text-align: center;
+    color: #9AA0A5;
+}
+.about-col-1 h2{
+    color: #fff;
 }
 .about-col-1 h2{
     margin-top: 5%;
@@ -238,15 +245,23 @@ nav ul li a:hover::after{
 .personal-info ul li{
     list-style-type: none;
 }
+.personal-info ul li a{
+    text-decoration: none;
+    color: inherit;
+}
 .about-col-2{
     flex-basis: 60%;
     text-align: justify;
     font-size: 15px;
+    color: #9AA0A5;
+}
+.about-col-2 p strong{
+    color: #fff;
 }
 .sub-title{
     font-size: 40px;
     font-weight: 600;
-    color:#1d7ba8;
+    color:#fff;
 }
 .tab-titles{
     display: flex;
@@ -263,7 +278,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1d7ba8;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -272,13 +287,16 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 100%;
 }
+.tab-titles{
+    color: #fff;
+}
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
 .tab-contents ul li span{
     font-size: 14px;
-    color:#4faad4;
+    color:#fff;
 }
 .tab-contents{
     display: none;
@@ -295,21 +313,21 @@ nav ul li a:hover::after{
 }
 .tab-contents::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #1d7ba8;
+    background-color: #A9AFB4;
 }
 .tab-contents.active-tab{
     display: block;
 }
 .progress{
-    background-color: #f0f0f0;
+    background-color: #A9AFB4;
     border-radius: 30px;
     height: 20px;
     width: 400px;
     overflow: hidden;
 }
 .progress-bar{
-    background-color: #1d7ba8;
-    color: white;
+    background-color: #1D7AA6;
+    color: #fff;
     text-align: center;
     height: 20px;
     border-radius: 30px;
